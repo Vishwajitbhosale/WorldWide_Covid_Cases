@@ -1,0 +1,25 @@
+#Putting the data in HDFS#
+
+hadoop fs -put /covid.txt /covid_worldwide/
+
+#Creating Hive temprory table to cleaning data#
+
+Create table temp(country varchar(40),code varchar(10), city varchar(40), longitude float,latitude float, cases int, death int,
+recovered int, DateTime timestamp)row format delimited fields terminated by (' ') stored as textfile;
+
+#Aggregating data from temp table and creation of new table#
+
+create table Covidcases as select country,code,longitude,latitude,SUM(cases) as cases from temp group by country;
+
+#inserting the data into hdfs#
+
+insert overwrite directory '/Covid19/' select * from Covidcases;
+
+#Sqoop command to transfer the data from hdfs to MYSQL database#
+
+sqoop export --connect jdbc:mysql://localhost/Project -username root --P --columns="country,code,longitude,latitude,cases" --table
+WorldWide_Covid_Cases --export-dir /Covid19;
+
+#After integrating with world map, Query for creating world wide covid cases pannel.
+Select country,code,longitude,latitude,cases from WorldWide_Covid_Cases;
+
