@@ -11,14 +11,10 @@ recovered int, DateTime timestamp)row format delimited fields terminated by (' '
 
 create table Covidcases as select country,code,longitude,latitude,SUM(cases) as cases from temp group by country;
 
-#inserting the data into hdfs#
+#Sqoop command to transfer the data from hive warehouse to MYSQL database#
 
-insert overwrite directory '/Covid19/' select * from Covidcases;
-
-#Sqoop command to transfer the data from hdfs to MYSQL database#
-
-sqoop export --connect jdbc:mysql://localhost/Project -username root --P --columns="country,code,longitude,latitude,cases" --table
-WorldWide_Covid_Cases --export-dir /Covid19;
+sqoop export --connect jdbc:mysql://localhost/Project -username root --P --columns "country,code,longitude,latitude,cases" --table
+WorldWide_Covid_Cases --export-dir /user/hive/warehouse/practise.db/Covidcases;
 
 #After integrating with world map, Query for creating world wide covid cases pannel.
 Select country,code,longitude,latitude,cases from WorldWide_Covid_Cases;
