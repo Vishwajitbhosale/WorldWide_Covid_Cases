@@ -1,4 +1,4 @@
-# WorldWide_Covid_Cases
+# WorldWide_Covid_BasedON_Historical_data
 
 "Countrywise_Covid_Cases.txt" file contains the aggregated countrywise data of covid cases. This is an historical data.
 
