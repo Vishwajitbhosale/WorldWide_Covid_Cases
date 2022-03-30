@@ -7,3 +7,6 @@ First the data recived from API is stored in HDFS, then the using HVE table agre
 Using "GRAFANA", an open source dashboarding tool, created pannel for covid cases wordwide. The created pannel is shown in "WorldMap_with_CovidCases.png" image.
 
 All the process and commands are provided in the code.txt
+
+![WorldCovidcases](https://user-images.githubusercontent.com/92929807/160751356-833196cf-462a-4f31-9bc4-b459db6f2907.png)
+
