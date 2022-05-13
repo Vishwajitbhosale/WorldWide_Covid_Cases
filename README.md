@@ -10,5 +10,6 @@ All the process and commands are provided in the code.txt
 
 ![WorldCovidcases](https://user-images.githubusercontent.com/92929807/160751356-833196cf-462a-4f31-9bc4-b459db6f2907.png)
 
-https://public.tableau.com/app/profile/vishwajit.bhosale/viz/Covid19_Data_16524346793380/Dashboard1
 
+
+https://public.tableau.com/shared/DGPK2T8DC?:display_count=n&:origin=viz_share_link
