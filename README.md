@@ -10,6 +10,9 @@ All the process and commands are provided in the code.txt
 
 ![WorldCovidcases](https://user-images.githubusercontent.com/92929807/160751356-833196cf-462a-4f31-9bc4-b459db6f2907.png)
 
+![WorldCovidcases](https://github.com/Vishwajitbhosale/WorldWide_Covid_Cases/assets/92929807/f4f10694-b862-4b8e-a082-addf69a66278.png)
+
+<img width="768" alt="image" src="https://github.com/Vishwajitbhosale/WorldWide_Covid_Cases/assets/92929807/f4f10694-b862-4b8e-a082-addf69a66278">
 
 
 https://public.tableau.com/shared/DGPK2T8DC?:display_count=n&:origin=viz_share_link
