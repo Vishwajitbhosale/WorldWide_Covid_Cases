@@ -9,5 +9,3 @@ Using "GRAFANA", an open source dashboarding tool, created pannel for covid case
 All the process and commands are provided in the code.txt
 
 <img width="767" alt="image" src="https://github.com/Vishwajitbhosale/WorldWide_Covid_Cases/assets/92929807/c162e4b4-088e-465a-8df7-8004ba086ffc">
-
-https://public.tableau.com/app/profile/vishwajit.bhosale/viz/Covid19_Data_16525348187550/Dashboard2
